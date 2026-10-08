@@ -1,0 +1,24 @@
+# Python dependencies for standalone training, evaluation, plotting, and the API.
+# Target interpreter: Python 3.11.
+# Install from the repository root in a virtual environment:
+#   python -m pip install -r requirements.txt
+#
+# Direct dependencies are pinned; pip resolves their transitive dependencies.
+# Torch, NumPy, Matplotlib, and PyYAML pins match the local Python environment.
+# Flask is not installed locally; the complete environment is not yet validated.
+# Java dependencies are managed separately by Maven in pom.xml.
+
+# Neural networks, tensor operations, and model checkpoints.
+torch==2.9.1
+
+# Environment state, numerical operations, and prioritized replay sampling.
+numpy==2.3.4
+
+# Training curves and evaluation plots.
+matplotlib==3.10.7
+
+# Reads RLPython/hyperparameters.yaml (imported as yaml).
+PyYAML==6.0.3
+
+# HTTP prediction service used by the Java integration.
+Flask==3.1.3
